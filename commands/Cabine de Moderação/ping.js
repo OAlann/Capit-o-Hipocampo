@@ -7,7 +7,7 @@ module.exports = {
       .setColor(process.env.COLOR)
       .setAuthor(`🏓 Pong, hehe!`)
       .addField('Meu tempo de resposta atual', `${Math.round(client.ws.ping)} ms`)
-      .addField('Mais informações?', 'Digite *boitinfo para conferir os detalhes de API do bot.')
+      .addField('Mais informações?', 'Digite *botinfo para conferir os detalhes de API do bot.')
 
     message.channel.send(embed)
   },
