@@ -41,13 +41,13 @@ const embed = new Discord.MessageEmbed()
         .setTimestamp()
         .setFooter('Cabine de Moderação | PomoTrem', 'https://i.ibb.co/M8488yJ/escudo-2.png')
 
-        await usu.send(embed);
+        await usu.send(embed).catch(console.error);
         await usu.ban({
             reason: reason
         });
         
         
-        message.channel.send(dev);
+        message.channel.send(dev).catch(console.error);
     },
 
   conf: {},
